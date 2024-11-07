@@ -1,0 +1,20 @@
+CAPI=2:
+name: gisselquist-technology:ip:wbxbar:1.0.0
+description: Pipelined Wishbone Crossbar
+
+filesets:
+  rtl:
+    files:
+      - rtl/addrdecode.v
+      - rtl/skidbuffer.v
+      - rtl/wbxbar.v
+    file_type: systemVerilogSource
+
+targets:
+  default: &default
+    filesets:
+      - rtl
+    toplevel: wbxbar
+
+  
+

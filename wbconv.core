@@ -1,0 +1,19 @@
+CAPI=2:
+name: gisselquist-technology:ip:wbconv:1.0.0
+description: Wishbone Classic/Pipelined Converters
+
+filesets:
+  rtl:
+    files:
+      - rtl/wbp2classic.v
+      - rtl/wbc2pipeline.v
+    file_type: systemVerilogSource
+
+targets:
+  default: &default
+    filesets:
+      - rtl
+    toplevel: dummy
+
+  
+
